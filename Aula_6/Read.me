@@ -1,0 +1,41 @@
+Shi-Tomasi
+Pontos Positivos:
+Precisão Refinada: Detecta apenas os "melhores" cantos, evitando falsos positivos em áreas menos relevantes.
+
+Controle Avançado de Detecção: Permite ajuste com parâmetros como qualityLevel e maxCorners, oferecendo maior flexibilidade.
+
+Suporte para Aplicações Modernas: Muito usado em sistemas complexos, como SLAM (Localização Simultânea e Mapeamento), que são essenciais para robótica e visão computacional.
+
+Eficiência em Imagens Texturizadas: Funciona bem em superfícies com texturas ou padrões variados.
+
+Evita Sobredetecção: É menos propenso a detectar cantos redundantes ou excessivos.
+
+Pontos Negativos:
+Dependência de Parâmetros: Requer ajustes precisos para diferentes tipos de imagens, o que pode ser trabalhoso.
+
+Sensibilidade Limitada: Pode não detectar cantos em imagens com baixa qualidade ou contraste.
+
+Menor Robustez em Imagens Uniformes: Em áreas com baixa variação de intensidade, pode não ser tão eficaz.
+
+Complexidade Computacional: Para imagens grandes, o processamento pode ser mais demorado devido à análise refinada.
+
+Harris
+Pontos Positivos:
+Facilidade de Configuração: Menos parâmetros para ajustar, como blockSize, ksize e k, sendo mais simples de usar.
+
+Boa Performance em Estruturas Simples: Ideal para imagens com cantos claramente definidos e boa separação entre regiões.
+
+Detecção Robusta: Consegue identificar cantos mesmo em imagens com baixa resolução ou contraste.
+
+Ampla Aplicação em Detecção Inicial: Usado em tarefas preliminares de análise de imagens, onde uma detecção simples é suficiente.
+
+Rapidez: Em configurações padrão, é geralmente mais rápido que o Shi-Tomasi devido à menor complexidade.
+
+Pontos Negativos:
+Menos Precisão: Pode detectar cantos redundantes ou falsos positivos em áreas não homogêneas.
+
+Dependência do Gradiente Local: Não funciona bem em áreas onde o gradiente é muito fraco ou com ruído excessivo.
+
+Sensibilidade aos Parâmetros: Pequenas mudanças em k ou blockSize podem afetar drasticamente os resultados, exigindo testes manuais.
+
+Pouco Refinado: Comparado ao Shi-Tomasi, a seleção dos cantos pode ser menos sofisticada e adaptável.
